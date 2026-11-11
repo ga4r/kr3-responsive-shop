@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог пульсометров Polar и Suunto — RunSmart</title>
+  <meta name="description" content="Каталог RunSmart: пульсометры для фитнеса, GPS-часы для бега, нагрудные датчики и комплекты. Цены, скидки и наличие.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo site-header__logo" href="index.html">
+        <img class="logo__mark" src="images/favicon.svg" alt="" width="36" height="36">
+        <span>Run<span class="logo__accent">Smart</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="delivery.html">Доставка и оплата</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="site-header__phone" href="tel:+74999228974">+7 (499) 922-89-74</a>
+        <a class="button button--small" href="#callback-modal">Заказать звонок</a>
+      </div>
+    </div>
+  </header>
+
+
+  <main id="main">
+    <section class="page-heading" aria-labelledby="page-title">
+      <div class="container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__current" aria-current="page">Каталог</span></li>
+        </ol>
+      </nav>
+        <h1 class="page-heading__title" id="page-title">Каталог пульсометров</h1>
+        <p class="page-heading__lead">Пульсометры, GPS-часы и нагрудные датчики Polar и Suunto. Не знаете, что выбрать? Нажмите «Заказать звонок» — поможем.</p>
+      </div>
+    </section>
+
+    <section class="section section--compact" aria-label="Товары каталога">
+      <div class="container catalog-layout">
+        <aside class="filters" aria-labelledby="filters-title">
+          <h2 class="filters__title" id="filters-title">Фильтры</h2>
+          <form class="filters__form" action="catalog.html" method="get">
+            <fieldset class="filters__group">
+              <legend class="filters__legend">Категория</legend>
+              <div class="filters__options">
+                <label class="filters__option"><input class="filters__checkbox" type="checkbox" name="category" value="fitness" checked> Для фитнеса <span class="filters__count">3</span></label>
+                <label class="filters__option"><input class="filters__checkbox" type="checkbox" name="category" value="running" checked> Для бега <span class="filters__count">3</span></label>
+                <label class="filters__option"><input class="filters__checkbox" type="checkbox" name="category" value="sensors" checked> Датчики и комплекты <span class="filters__count">2</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="filters__group">
+              <legend class="filters__legend">Бренд</legend>
+              <div class="filters__options">
+                <label class="filters__option"><input class="filters__checkbox" type="checkbox" name="brand" value="polar"> Polar <span class="filters__count">6</span></label>
+                <label class="filters__option"><input class="filters__checkbox" type="checkbox" name="brand" value="suunto"> Suunto <span class="filters__count">2</span></label>
+              </div>
+            </fieldset>
+            <fieldset class="filters__group">
+              <legend class="filters__legend">Цена, ₽</legend>
+              <div class="filters__range">
+                <div class="form__field">
+                  <label class="form__hint" for="price-from">от</label>
+                  <input class="form__input" id="price-from" name="price_from" type="number" min="0" step="500" placeholder="4 500">
+                </div>
+                <div class="form__field">
+                  <label class="form__hint" for="price-to">до</label>
+                  <input class="form__input" id="price-to" name="price_to" type="number" min="0" step="500" placeholder="25 000">
+                </div>
+              </div>
+            </fieldset>
+            <fieldset class="filters__group">
+              <legend class="filters__legend">Возможности</legend>
+              <div class="filters__options">
+                <label class="filters__option"><input class="filters__checkbox" type="checkbox" name="feature" value="gps"> Встроенный GPS</label>
+                <label class="filters__option"><input class="filters__checkbox" type="checkbox" name="feature" value="calories"> Подсчёт калорий</label>
+                <label class="filters__option"><input class="filters__checkbox" type="checkbox" name="feature" value="swim"> Для плавания</label>
+                <label class="filters__option"><input class="filters__checkbox" type="checkbox" name="stock" value="1"> Только в наличии</label>
+              </div>
+            </fieldset>
+            <div class="filters__actions">
+              <button class="button button--small" type="submit">Показать</button>
+              <button class="button button--outline button--small" type="reset">Сбросить</button>
+            </div>
+          </form>
+        </aside>
+
+        <div class="catalog-layout__content">
+          <nav class="catalog-tabs" aria-label="Категории каталога">
+            <ul class="catalog-tabs__list">
+              <li><a class="catalog-tabs__link catalog-tabs__link--active" href="catalog.html" aria-current="page">Все товары <span class="catalog-tabs__count">8</span></a></li>
+              <li><a class="catalog-tabs__link" href="#fitness">Для фитнеса <span class="catalog-tabs__count">3</span></a></li>
+              <li><a class="catalog-tabs__link" href="#running">Для бега <span class="catalog-tabs__count">3</span></a></li>
+              <li><a class="catalog-tabs__link" href="#sensors">Датчики и комплекты <span class="catalog-tabs__count">2</span></a></li>
+            </ul>
+          </nav>
+
+          <div class="catalog-toolbar">
+            <p class="catalog-toolbar__count">Найдено 8 товаров</p>
+            <div class="catalog-toolbar__sort">
+              <label for="sort">Сортировка:</label>
+              <select class="form__select" id="sort" name="sort">
+                <option value="popular">по популярности</option>
+                <option value="cheap">сначала дешевле</option>
+                <option value="expensive">сначала дороже</option>
+                <option value="new">новинки</option>
+              </select>
+            </div>
+          </div>
+
+          <section class="catalog-section" id="fitness" aria-labelledby="fitness-title">
+            <h2 class="catalog-section__title" id="fitness-title">Для фитнеса</h2>
+            <p class="catalog-section__lead">Простые пульсометры для тренажёрного зала, ходьбы и первых пробежек.</p>
+            <ul class="product-grid">
+            <li class="product-grid__item product-grid__item--wide">
+          <article class="product-card product-card--discount product-card--featured" aria-labelledby="card-ft4-f">
+            <div class="product-card__media">
+            <div class="product-card__badges"><span class="badge badge--hit">Хит</span><span class="badge badge--sale">−5%</span></div>
+              <img class="product-card__image" src="images/products/polar-ft4.webp" srcset="images/products/polar-ft4-320.webp 320w, images/products/polar-ft4.webp 403w" sizes="(min-width: 1024px) 260px, (min-width: 576px) 45vw, 100vw" alt="Пульсометр Polar FT4" width="403" height="640" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Для фитнеса</p>
+              <h3 class="product-card__title" id="card-ft4-f"><a class="product-card__title-link" href="product.html">Polar FT4</a></h3>
+              <p class="product-card__description">Улучшенная версия FT1: считает калории, подсказывает целевые зоны пульса и хранит историю тренировок.</p>
+              <ul class="product-card__meta"><li>Зоны пульса</li><li>Калории</li><li>WR30</li></ul>
+              <p class="product-card__stock">В наличии</p>
+              <div class="product-card__prices">
+                <p class="product-card__price"><span class="visually-hidden">Цена: </span>7&nbsp;021&nbsp;₽</p>
+              <s class="product-card__price-old"><span class="visually-hidden">Старая цена: </span>7&nbsp;390&nbsp;₽</s>
+              </div>
+              <div class="product-card__actions">
+                <a class="button button--outline button--small" href="product.html">Подробнее</a>
+                <a class="button button--small product-card__button" href="order.html">В заявку</a>
+              </div>
+            </div>
+          </article>
+        </li>
+            <li class="product-grid__item">
+          <article class="product-card product-card--discount" aria-labelledby="card-ft1-c">
+            <div class="product-card__media">
+            <div class="product-card__badges"><span class="badge badge--sale">−5%</span></div>
+              <img class="product-card__image" src="images/products/polar-ft1.webp" srcset="images/products/polar-ft1-320.webp 320w, images/products/polar-ft1.webp 371w" sizes="(min-width: 1024px) 260px, (min-width: 576px) 45vw, 100vw" alt="Пульсометр Polar FT1" width="371" height="640" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Для фитнеса</p>
+              <h3 class="product-card__title" id="card-ft1-c"><a class="product-card__title-link" href="product.html">Polar FT1</a></h3>
+              <p class="product-card__description">Для первых шагов в тренировках по пульсу: показывает ЧСС и сигналит при выходе из целевой зоны.</p>
+              <ul class="product-card__meta"><li>Нагрудный датчик</li><li>WR30</li></ul>
+              <p class="product-card__stock">В наличии</p>
+              <div class="product-card__prices">
+                <p class="product-card__price"><span class="visually-hidden">Цена: </span>4&nbsp;500&nbsp;₽</p>
+              <s class="product-card__price-old"><span class="visually-hidden">Старая цена: </span>4&nbsp;750&nbsp;₽</s>
+              </div>
+              <div class="product-card__actions">
+                <a class="button button--outline button--small" href="product.html">Подробнее</a>
+                <a class="button button--small product-card__button" href="order.html">В заявку</a>
+              </div>
+            </div>
+          </article>
+        </li>
+            <li class="product-grid__item">
+          <article class="product-card product-card--discount" aria-labelledby="card-m2-c">
+            <div class="product-card__media">
+            <div class="product-card__badges"><span class="badge badge--sale">−5%</span></div>
+              <img class="product-card__image" src="images/products/suunto-m2.webp" srcset="images/products/suunto-m2-320.webp 320w, images/products/suunto-m2.webp 480w" sizes="(min-width: 1024px) 260px, (min-width: 576px) 45vw, 100vw" alt="Пульсометр Suunto M2" width="480" height="640" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Для фитнеса</p>
+              <h3 class="product-card__title" id="card-m2-c"><a class="product-card__title-link" href="product.html">Suunto M2</a></h3>
+              <p class="product-card__description">Пульсометр начального уровня с комфортным ремешком и понятным крупным экраном.</p>
+              <ul class="product-card__meta"><li>Зоны пульса</li><li>Калории</li></ul>
+              <p class="product-card__stock">В наличии</p>
+              <div class="product-card__prices">
+                <p class="product-card__price"><span class="visually-hidden">Цена: </span>6&nbsp;641&nbsp;₽</p>
+              <s class="product-card__price-old"><span class="visually-hidden">Старая цена: </span>6&nbsp;990&nbsp;₽</s>
+              </div>
+              <div class="product-card__actions">
+                <a class="button button--outline button--small" href="product.html">Подробнее</a>
+                <a class="button button--small product-card__button" href="order.html">В заявку</a>
+              </div>
+            </div>
+          </article>
+        </li>
+            </ul>
+          </section>
+
+          <section class="catalog-section" id="running" aria-labelledby="running-title">
+            <h2 class="catalog-section__title" id="running-title">Для бега</h2>
+            <p class="catalog-section__lead">GPS-часы с темпом, дистанцией и планами тренировок.</p>
+            <ul class="product-grid">
+            <li class="product-grid__item">
+          <article class="product-card" aria-labelledby="card-m400-c">
+            <div class="product-card__media">
+            <div class="product-card__badges"><span class="badge badge--hit">Хит</span></div>
+              <img class="product-card__image" src="images/products/polar-m400.webp" srcset="images/products/polar-m400-320.webp 320w, images/products/polar-m400.webp 640w" sizes="(min-width: 1024px) 260px, (min-width: 576px) 45vw, 100vw" alt="Пульсометр Polar M400" width="640" height="495" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Для бега</p>
+              <h3 class="product-card__title" id="card-m400-c"><a class="product-card__title-link" href="product.html">Polar M400</a></h3>
+              <p class="product-card__description">GPS-часы для бега: темп, дистанция, пульс и планы тренировок в приложении Polar Flow.</p>
+              <ul class="product-card__meta"><li>GPS</li><li>Пульс</li><li>WR30</li></ul>
+              <p class="product-card__stock">В наличии</p>
+              <div class="product-card__prices">
+                <p class="product-card__price"><span class="visually-hidden">Цена: </span>14&nbsp;990&nbsp;₽</p>
+              </div>
+              <div class="product-card__actions">
+                <a class="button button--outline button--small" href="product.html">Подробнее</a>
+                <a class="button button--small product-card__button" href="order.html">В заявку</a>
+              </div>
+            </div>
+          </article>
+        </li>
+            <li class="product-grid__item">
+          <article class="product-card" aria-labelledby="card-m600-c">
+            <div class="product-card__media">
+            <div class="product-card__badges"><span class="badge badge--new">Новинка</span></div>
+              <img class="product-card__image" src="images/products/polar-m600.webp" srcset="images/products/polar-m600-320.webp 320w, images/products/polar-m600.webp 640w" sizes="(min-width: 1024px) 260px, (min-width: 576px) 45vw, 100vw" alt="Пульсометр Polar M600" width="640" height="360" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Для бега</p>
+              <h3 class="product-card__title" id="card-m600-c"><a class="product-card__title-link" href="product.html">Polar M600</a></h3>
+              <p class="product-card__description">Умные спортивные часы с оптическим датчиком пульса на запястье, GPS и музыкой.</p>
+              <ul class="product-card__meta"><li>GPS</li><li>Пульс на запястье</li><li>WR10</li></ul>
+              <p class="product-card__stock">В наличии</p>
+              <div class="product-card__prices">
+                <p class="product-card__price"><span class="visually-hidden">Цена: </span>24&nbsp;990&nbsp;₽</p>
+              </div>
+              <div class="product-card__actions">
+                <a class="button button--outline button--small" href="product.html">Подробнее</a>
+                <a class="button button--small product-card__button" href="order.html">В заявку</a>
+              </div>
+            </div>
+          </article>
+        </li>
+            <li class="product-grid__item">
+          <article class="product-card product-card--unavailable" aria-labelledby="card-rc3-c">
+            <div class="product-card__media">
+            <div class="product-card__badges"><span class="badge badge--muted">Нет в наличии</span></div>
+              <img class="product-card__image" src="images/products/polar-rc3.webp" srcset="images/products/polar-rc3-320.webp 320w, images/products/polar-rc3.webp 640w" sizes="(min-width: 1024px) 260px, (min-width: 576px) 45vw, 100vw" alt="Пульсометр Polar RC3 GPS" width="640" height="450" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Для бега</p>
+              <h3 class="product-card__title" id="card-rc3-c"><a class="product-card__title-link" href="product.html">Polar RC3 GPS</a></h3>
+              <p class="product-card__description">Лёгкие часы со встроенным GPS для бега и велотренировок, до 12 часов в режиме GPS.</p>
+              <ul class="product-card__meta"><li>GPS</li><li>Велорежим</li></ul>
+              <p class="product-card__stock">Ожидается поступление</p>
+              <div class="product-card__prices">
+                <p class="product-card__price"><span class="visually-hidden">Цена: </span>12&nbsp;490&nbsp;₽</p>
+              </div>
+              <div class="product-card__actions">
+                <a class="button button--outline button--small" href="product.html">Подробнее</a>
+                <button class="button button--small product-card__button" type="button" disabled>Нет в наличии</button>
+              </div>
+            </div>
+          </article>
+        </li>
+            </ul>
+          </section>
+
+          <section class="catalog-section" id="sensors" aria-labelledby="sensors-title">
+            <h2 class="catalog-section__title" id="sensors-title">Датчики и комплекты</h2>
+            <p class="catalog-section__lead">Нагрудные датчики для точного пульса и готовые наборы для старта.</p>
+            <ul class="product-grid">
+            <li class="product-grid__item">
+          <article class="product-card" aria-labelledby="card-belt-c">
+            <div class="product-card__media">
+              <img class="product-card__image" src="images/products/suunto-dual-belt.webp" srcset="images/products/suunto-dual-belt-320.webp 320w, images/products/suunto-dual-belt.webp 525w" sizes="(min-width: 1024px) 260px, (min-width: 576px) 45vw, 100vw" alt="Пульсометр Suunto Dual Comfort Belt" width="525" height="296" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Датчики и комплекты</p>
+              <h3 class="product-card__title" id="card-belt-c"><a class="product-card__title-link" href="product.html">Suunto Dual Comfort Belt</a></h3>
+              <p class="product-card__description">Нагрудный датчик пульса с мягким текстильным ремнём, работает на суше и в воде.</p>
+              <ul class="product-card__meta"><li>Bluetooth + ANT+</li><li>Для плавания</li></ul>
+              <p class="product-card__stock">В наличии</p>
+              <div class="product-card__prices">
+                <p class="product-card__price"><span class="visually-hidden">Цена: </span>5&nbsp;990&nbsp;₽</p>
+              </div>
+              <div class="product-card__actions">
+                <a class="button button--outline button--small" href="product.html">Подробнее</a>
+                <a class="button button--small product-card__button" href="order.html">В заявку</a>
+              </div>
+            </div>
+          </article>
+        </li>
+            <li class="product-grid__item">
+          <article class="product-card" aria-labelledby="card-ft1kit-c">
+            <div class="product-card__media">
+            <div class="product-card__badges"><span class="badge badge--new">Новинка</span></div>
+              <img class="product-card__image" src="images/products/polar-ft1-kit.webp" srcset="images/products/polar-ft1-kit-320.webp 320w, images/products/polar-ft1-kit.webp 522w" sizes="(min-width: 1024px) 260px, (min-width: 576px) 45vw, 100vw" alt="Пульсометр Комплект Polar FT1" width="522" height="420" loading="lazy">
+            </div>
+            <div class="product-card__body">
+              <p class="product-card__category">Датчики и комплекты</p>
+              <h3 class="product-card__title" id="card-ft1kit-c"><a class="product-card__title-link" href="product.html">Комплект Polar FT1</a></h3>
+              <p class="product-card__description">Пульсометр FT1 с нагрудным ремнём и запасной батарейкой — всё для старта в одной коробке.</p>
+              <ul class="product-card__meta"><li>Готовый набор</li></ul>
+              <p class="product-card__stock">В наличии</p>
+              <div class="product-card__prices">
+                <p class="product-card__price"><span class="visually-hidden">Цена: </span>5&nbsp;290&nbsp;₽</p>
+              </div>
+              <div class="product-card__actions">
+                <a class="button button--outline button--small" href="product.html">Подробнее</a>
+                <a class="button button--small product-card__button" href="order.html">В заявку</a>
+              </div>
+            </div>
+          </article>
+        </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <section aria-labelledby="footer-about">
+        <h2 class="visually-hidden" id="footer-about">О магазине</h2>
+        <a class="logo logo--inverse" href="index.html">
+          <img class="logo__mark" src="images/favicon.svg" alt="" width="36" height="36" loading="lazy">
+          <span>Run<span class="logo__accent">Smart</span></span>
+        </a>
+        <p class="site-footer__about">Подбираем пульсометры и спортивные часы под уровень подготовки и цели. Официальный представитель Polar и Suunto.</p>
+      </section>
+
+      <nav aria-labelledby="footer-shop">
+        <h2 class="site-footer__title" id="footer-shop">Магазин</h2>
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="catalog.html">Весь каталог</a></li>
+          <li><a class="site-footer__link" href="catalog.html#fitness">Для фитнеса</a></li>
+          <li><a class="site-footer__link" href="catalog.html#running">Для бега</a></li>
+          <li><a class="site-footer__link" href="catalog.html#sensors">Датчики и комплекты</a></li>
+          <li><a class="site-footer__link" href="delivery.html">Доставка и оплата</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="footer-home">
+        <h2 class="site-footer__title" id="footer-home">На главной</h2>
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+          <li><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+          <li><a class="site-footer__link" href="index.html#reviews">Отзывы</a></li>
+          <li><a class="site-footer__link" href="index.html#contacts">Контакты</a></li>
+          <li><a class="site-footer__link" href="contacts.html#faq">Вопросы и ответы</a></li>
+        </ul>
+      </nav>
+
+      <section aria-labelledby="footer-contacts">
+        <h2 class="site-footer__title" id="footer-contacts">Связаться с нами</h2>
+        <address class="site-footer__contacts">
+          <span>Москва, Мясницкий проезд, 3с1</span>
+          <a class="site-footer__link" href="tel:+74999228974">+7 (499) 922-89-74</a>
+          <a class="site-footer__link" href="mailto:hello@runsmart.example">hello@runsmart.example</a>
+        </address>
+        <ul class="socials">
+          <li><a class="socials__link" href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><img class="socials__icon" src="images/icons/social-telegram.svg" alt="" width="20" height="20"></a></li>
+          <li><a class="socials__link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img class="socials__icon" src="images/icons/social-youtube.svg" alt="" width="20" height="20"></a></li>
+          <li><a class="socials__link" href="mailto:hello@runsmart.example" aria-label="Написать на почту"><img class="socials__icon" src="images/icons/social-mail.svg" alt="" width="20" height="20"></a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="container">
+      <div class="site-footer__bottom">
+        <p>© 2026 RunSmart. Учебный проект, магазин вымышленный.</p>
+        <p>КР №3 · Маркосян Гарегин, ЭФБО-01-25</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="page-up" href="#top" aria-label="Наверх страницы">
+    <img class="page-up__icon" src="images/icons/arrow-up.svg" alt="" width="22" height="22">
+  </a>
+
+  <!-- CSS-модалка: открывается ссылкой на #callback-modal (псевдокласс :target),
+       закрывается ссылкой на несуществующий якорь #close — без JavaScript -->
+  <div class="modal" id="callback-modal" role="dialog" aria-modal="true" aria-labelledby="callback-title">
+    <a class="modal__overlay" href="#close" tabindex="-1" aria-hidden="true"></a>
+    <div class="modal__window">
+      <a class="modal__close" href="#close" aria-label="Закрыть окно">&times;</a>
+      <h2 class="modal__title" id="callback-title">Заказать звонок</h2>
+      <p class="modal__text">Оставьте номер — перезвоним в течение 10 минут и поможем подобрать пульсометр.</p>
+      <form class="form form--compact" action="thanks.html" method="get">
+        <div class="form__grid">
+          <div class="form__field">
+            <label class="form__label" for="callback-name">Имя <abbr class="form__required" title="обязательное поле">*</abbr></label>
+            <input class="form__input" id="callback-name" name="name" type="text" autocomplete="name" minlength="2" required placeholder="Как к вам обращаться">
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="callback-phone">Телефон <abbr class="form__required" title="обязательное поле">*</abbr></label>
+            <input class="form__input" id="callback-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9 +\(\)\-]{10,18}" required placeholder="+7 (999) 123-45-67" aria-describedby="callback-phone-error">
+            <p class="form__error" id="callback-phone-error">Введите номер из 10–18 цифр</p>
+          </div>
+        </div>
+        <label class="form__checkbox-label">
+          <input class="form__checkbox" name="agree" type="checkbox" required>
+          Согласен на обработку персональных данных
+        </label>
+        <button class="button button--block" type="submit">Жду звонка</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

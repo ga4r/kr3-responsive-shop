@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление заявки — RunSmart</title>
+  <meta name="description" content="Оформите заявку на пульсометр RunSmart: выберите модель и способ получения, менеджер перезвонит в течение 10 минут.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo site-header__logo" href="index.html">
+        <img class="logo__mark" src="images/favicon.svg" alt="" width="36" height="36">
+        <span>Run<span class="logo__accent">Smart</span></span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="delivery.html">Доставка и оплата</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="order.html" aria-current="page">Заявка</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-header__actions">
+        <a class="site-header__phone" href="tel:+74999228974">+7 (499) 922-89-74</a>
+        <a class="button button--small" href="#callback-modal">Заказать звонок</a>
+      </div>
+    </div>
+  </header>
+
+
+  <main id="main">
+    <section class="page-heading" aria-labelledby="page-title">
+      <div class="container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs__item"><span class="breadcrumbs__current" aria-current="page">Оформление заявки</span></li>
+        </ol>
+      </nav>
+        <h1 class="page-heading__title" id="page-title">Оформление заявки</h1>
+        <p class="page-heading__lead">Заполните форму — менеджер перезвонит, подтвердит наличие и согласует доставку. Оплата при получении.</p>
+      </div>
+    </section>
+
+    <section class="section section--compact" aria-label="Форма заявки">
+      <div class="container order-layout">
+        <form class="form" action="thanks.html" method="get">
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">1. Контактные данные</legend>
+            <div class="form__grid">
+              <div class="form__field">
+                <label class="form__label" for="order-name">Имя и фамилия <abbr class="form__required" title="обязательное поле">*</abbr></label>
+                <input class="form__input" id="order-name" name="name" type="text" autocomplete="name" minlength="2" required placeholder="Иван Петров" aria-describedby="order-name-error">
+                <p class="form__error" id="order-name-error">Укажите имя — минимум 2 буквы</p>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="order-phone">Телефон <abbr class="form__required" title="обязательное поле">*</abbr></label>
+                <input class="form__input" id="order-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9 +\(\)\-]{10,18}" required placeholder="+7 (999) 123-45-67" aria-describedby="order-phone-hint order-phone-error">
+                <p class="form__hint" id="order-phone-hint">Позвоним для подтверждения заказа</p>
+                <p class="form__error" id="order-phone-error">Введите номер: цифры, пробелы, скобки, + и -</p>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="order-email">E-mail <abbr class="form__required" title="обязательное поле">*</abbr></label>
+                <input class="form__input" id="order-email" name="email" type="email" autocomplete="email" required placeholder="name@example.com" aria-describedby="order-email-error">
+                <p class="form__error" id="order-email-error">Проверьте адрес: в нём должны быть @ и домен</p>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="order-city">Город</label>
+                <input class="form__input" id="order-city" name="city" type="text" autocomplete="address-level2" placeholder="Москва">
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">2. Товар</legend>
+            <div class="form__grid">
+              <div class="form__field">
+                <label class="form__label" for="order-product">Выбранный товар <abbr class="form__required" title="обязательное поле">*</abbr></label>
+                <select class="form__select" id="order-product" name="product" required>
+                  <option value="ft4" selected>Polar FT4 — 7&nbsp;021&nbsp;₽</option>
+                  <option value="ft1">Polar FT1 — 4&nbsp;500&nbsp;₽</option>
+                  <option value="m2">Suunto M2 — 6&nbsp;641&nbsp;₽</option>
+                  <option value="m400">Polar M400 — 14&nbsp;990&nbsp;₽</option>
+                  <option value="rc3" disabled>Polar RC3 GPS — 12&nbsp;490&nbsp;₽ (нет в наличии)</option>
+                  <option value="m600">Polar M600 — 24&nbsp;990&nbsp;₽</option>
+                  <option value="belt">Suunto Dual Comfort Belt — 5&nbsp;990&nbsp;₽</option>
+                  <option value="ft1kit">Комплект Polar FT1 — 5&nbsp;290&nbsp;₽</option>
+                </select>
+              </div>
+              <div class="form__field">
+                <label class="form__label" for="order-quantity">Количество</label>
+                <input class="form__input" id="order-quantity" name="quantity" type="number" min="1" max="10" value="1">
+              </div>
+              <div class="form__field form__field--full">
+                <label class="form__label" for="order-topic">Тема заявки <abbr class="form__required" title="обязательное поле">*</abbr></label>
+                <select class="form__select" id="order-topic" name="topic" required>
+                  <option value="">— Выберите тему —</option>
+                  <option value="buy" selected>Покупка товара</option>
+                  <option value="consult">Консультация по подбору</option>
+                  <option value="gift">Покупка в подарок</option>
+                  <option value="corporate">Заказ для команды или клуба</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">3. Способ получения</legend>
+            <div class="form__choices">
+              <label class="form__choice">
+                <input class="form__radio" type="radio" name="delivery" value="courier" checked required>
+                <span class="form__choice-title">Курьер</span>
+                <span class="form__choice-text">По Москве бесплатно, завтра</span>
+              </label>
+              <label class="form__choice">
+                <input class="form__radio" type="radio" name="delivery" value="pickup">
+                <span class="form__choice-title">Самовывоз</span>
+                <span class="form__choice-text">Мясницкий пр., 3с1, сегодня</span>
+              </label>
+              <label class="form__choice">
+                <input class="form__radio" type="radio" name="delivery" value="post">
+                <span class="form__choice-title">По России</span>
+                <span class="form__choice-text">СДЭК или Почта, от 350&nbsp;₽</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="form__fieldset">
+            <legend class="form__legend">4. Комментарий</legend>
+            <div class="form__field">
+              <label class="form__label" for="order-comment">Комментарий к заявке</label>
+              <textarea class="form__textarea" id="order-comment" name="comment" maxlength="500" placeholder="Например: удобное время звонка, адрес доставки или ваши цели тренировок" aria-describedby="order-comment-hint"></textarea>
+              <p class="form__hint" id="order-comment-hint">До 500 символов</p>
+            </div>
+          </fieldset>
+
+          <label class="form__checkbox-label">
+            <input class="form__checkbox" name="agree" type="checkbox" required>
+            <span>Я согласен на обработку персональных данных <abbr class="form__required" title="обязательное поле">*</abbr></span>
+          </label>
+
+          <div class="form__actions">
+            <button class="button button--large" type="submit">Отправить заявку</button>
+            <button class="button button--outline button--large" type="reset">Очистить форму</button>
+            <p class="form__note">Поля, отмеченные <abbr class="form__required" title="обязательное поле">*</abbr>, обязательны для заполнения</p>
+          </div>
+        </form>
+
+        <aside class="order-summary" aria-labelledby="summary-title">
+          <h2 class="order-summary__title" id="summary-title">Ваша заявка</h2>
+          <div class="order-summary__product" data-product="ft4">
+            <img class="order-summary__image" src="images/products/polar-ft4.webp" alt="" width="403" height="640" loading="lazy">
+            <div>
+              <p class="order-summary__name">Polar FT4</p>
+              <p class="order-summary__category">Для фитнеса</p>
+              <p class="order-summary__price">7&nbsp;021&nbsp;₽ <s class="order-summary__price-old"><span class="visually-hidden">Старая цена: </span>7&nbsp;390&nbsp;₽</s></p>
+            </div>
+          </div>
+          <div class="order-summary__product" data-product="ft1">
+            <img class="order-summary__image" src="images/products/polar-ft1.webp" alt="" width="371" height="640" loading="lazy">
+            <div>
+              <p class="order-summary__name">Polar FT1</p>
+              <p class="order-summary__category">Для фитнеса</p>
+              <p class="order-summary__price">4&nbsp;500&nbsp;₽ <s class="order-summary__price-old"><span class="visually-hidden">Старая цена: </span>4&nbsp;750&nbsp;₽</s></p>
+            </div>
+          </div>
+          <div class="order-summary__product" data-product="m2">
+            <img class="order-summary__image" src="images/products/suunto-m2.webp" alt="" width="480" height="640" loading="lazy">
+            <div>
+              <p class="order-summary__name">Suunto M2</p>
+              <p class="order-summary__category">Для фитнеса</p>
+              <p class="order-summary__price">6&nbsp;641&nbsp;₽ <s class="order-summary__price-old"><span class="visually-hidden">Старая цена: </span>6&nbsp;990&nbsp;₽</s></p>
+            </div>
+          </div>
+          <div class="order-summary__product" data-product="m400">
+            <img class="order-summary__image" src="images/products/polar-m400.webp" alt="" width="640" height="495" loading="lazy">
+            <div>
+              <p class="order-summary__name">Polar M400</p>
+              <p class="order-summary__category">Для бега</p>
+              <p class="order-summary__price">14&nbsp;990&nbsp;₽</p>
+            </div>
+          </div>
+          <div class="order-summary__product" data-product="m600">
+            <img class="order-summary__image" src="images/products/polar-m600.webp" alt="" width="640" height="360" loading="lazy">
+            <div>
+              <p class="order-summary__name">Polar M600</p>
+              <p class="order-summary__category">Для бега</p>
+              <p class="order-summary__price">24&nbsp;990&nbsp;₽</p>
+            </div>
+          </div>
+          <div class="order-summary__product" data-product="belt">
+            <img class="order-summary__image" src="images/products/suunto-dual-belt.webp" alt="" width="525" height="296" loading="lazy">
+            <div>
+              <p class="order-summary__name">Suunto Dual Comfort Belt</p>
+              <p class="order-summary__category">Датчики и комплекты</p>
+              <p class="order-summary__price">5&nbsp;990&nbsp;₽</p>
+            </div>
+          </div>
+          <div class="order-summary__product" data-product="ft1kit">
+            <img class="order-summary__image" src="images/products/polar-ft1-kit.webp" alt="" width="522" height="420" loading="lazy">
+            <div>
+              <p class="order-summary__name">Комплект Polar FT1</p>
+              <p class="order-summary__category">Датчики и комплекты</p>
+              <p class="order-summary__price">5&nbsp;290&nbsp;₽</p>
+            </div>
+          </div>
+          <dl class="order-summary__list">
+            <div class="order-summary__row">
+              <dt class="order-summary__term">Доставка</dt>
+              <dd class="order-summary__value">
+                <span class="order-summary__delivery" data-delivery="courier">курьер, бесплатно</span>
+                <span class="order-summary__delivery" data-delivery="pickup">самовывоз, 0&nbsp;₽</span>
+                <span class="order-summary__delivery" data-delivery="post">СДЭК / Почта, от 350&nbsp;₽</span>
+              </dd>
+            </div>
+            <div class="order-summary__row"><dt class="order-summary__term">Оплата</dt><dd class="order-summary__value">при получении</dd></div>
+          </dl>
+          <p class="order-summary__note">Цена указана за 1&nbsp;шт. Итоговую сумму с учётом количества и доставки менеджер назовёт при звонке.</p>
+          <h3 class="order-summary__title">Что будет дальше</h3>
+          <ol class="steps steps--vertical">
+            <li class="steps__item"><p class="steps__text">Перезвоним в течение 10 минут</p></li>
+            <li class="steps__item"><p class="steps__text">Подтвердим наличие и доставку</p></li>
+            <li class="steps__item"><p class="steps__text">Оплата при получении</p></li>
+          </ol>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <section aria-labelledby="footer-about">
+        <h2 class="visually-hidden" id="footer-about">О магазине</h2>
+        <a class="logo logo--inverse" href="index.html">
+          <img class="logo__mark" src="images/favicon.svg" alt="" width="36" height="36" loading="lazy">
+          <span>Run<span class="logo__accent">Smart</span></span>
+        </a>
+        <p class="site-footer__about">Подбираем пульсометры и спортивные часы под уровень подготовки и цели. Официальный представитель Polar и Suunto.</p>
+      </section>
+
+      <nav aria-labelledby="footer-shop">
+        <h2 class="site-footer__title" id="footer-shop">Магазин</h2>
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="catalog.html">Весь каталог</a></li>
+          <li><a class="site-footer__link" href="catalog.html#fitness">Для фитнеса</a></li>
+          <li><a class="site-footer__link" href="catalog.html#running">Для бега</a></li>
+          <li><a class="site-footer__link" href="catalog.html#sensors">Датчики и комплекты</a></li>
+          <li><a class="site-footer__link" href="delivery.html">Доставка и оплата</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-labelledby="footer-home">
+        <h2 class="site-footer__title" id="footer-home">На главной</h2>
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+          <li><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+          <li><a class="site-footer__link" href="index.html#reviews">Отзывы</a></li>
+          <li><a class="site-footer__link" href="index.html#contacts">Контакты</a></li>
+          <li><a class="site-footer__link" href="contacts.html#faq">Вопросы и ответы</a></li>
+        </ul>
+      </nav>
+
+      <section aria-labelledby="footer-contacts">
+        <h2 class="site-footer__title" id="footer-contacts">Связаться с нами</h2>
+        <address class="site-footer__contacts">
+          <span>Москва, Мясницкий проезд, 3с1</span>
+          <a class="site-footer__link" href="tel:+74999228974">+7 (499) 922-89-74</a>
+          <a class="site-footer__link" href="mailto:hello@runsmart.example">hello@runsmart.example</a>
+        </address>
+        <ul class="socials">
+          <li><a class="socials__link" href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram"><img class="socials__icon" src="images/icons/social-telegram.svg" alt="" width="20" height="20"></a></li>
+          <li><a class="socials__link" href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img class="socials__icon" src="images/icons/social-youtube.svg" alt="" width="20" height="20"></a></li>
+          <li><a class="socials__link" href="mailto:hello@runsmart.example" aria-label="Написать на почту"><img class="socials__icon" src="images/icons/social-mail.svg" alt="" width="20" height="20"></a></li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="container">
+      <div class="site-footer__bottom">
+        <p>© 2026 RunSmart. Учебный проект, магазин вымышленный.</p>
+        <p>КР №3 · Маркосян Гарегин, ЭФБО-01-25</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="page-up" href="#top" aria-label="Наверх страницы">
+    <img class="page-up__icon" src="images/icons/arrow-up.svg" alt="" width="22" height="22">
+  </a>
+
+  <!-- CSS-модалка: открывается ссылкой на #callback-modal (псевдокласс :target),
+       закрывается ссылкой на несуществующий якорь #close — без JavaScript -->
+  <div class="modal" id="callback-modal" role="dialog" aria-modal="true" aria-labelledby="callback-title">
+    <a class="modal__overlay" href="#close" tabindex="-1" aria-hidden="true"></a>
+    <div class="modal__window">
+      <a class="modal__close" href="#close" aria-label="Закрыть окно">&times;</a>
+      <h2 class="modal__title" id="callback-title">Заказать звонок</h2>
+      <p class="modal__text">Оставьте номер — перезвоним в течение 10 минут и поможем подобрать пульсометр.</p>
+      <form class="form form--compact" action="thanks.html" method="get">
+        <div class="form__grid">
+          <div class="form__field">
+            <label class="form__label" for="callback-name">Имя <abbr class="form__required" title="обязательное поле">*</abbr></label>
+            <input class="form__input" id="callback-name" name="name" type="text" autocomplete="name" minlength="2" required placeholder="Как к вам обращаться">
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="callback-phone">Телефон <abbr class="form__required" title="обязательное поле">*</abbr></label>
+            <input class="form__input" id="callback-phone" name="phone" type="tel" autocomplete="tel" pattern="[0-9 +\(\)\-]{10,18}" required placeholder="+7 (999) 123-45-67" aria-describedby="callback-phone-error">
+            <p class="form__error" id="callback-phone-error">Введите номер из 10–18 цифр</p>
+          </div>
+        </div>
+        <label class="form__checkbox-label">
+          <input class="form__checkbox" name="agree" type="checkbox" required>
+          Согласен на обработку персональных данных
+        </label>
+        <button class="button button--block" type="submit">Жду звонка</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
