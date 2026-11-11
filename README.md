@@ -79,21 +79,27 @@ JavaScript в проекте нет: модальное окно из КР №1 
 - Видимый фокус: общее правило `:focus-visible` с рамкой 3px, у полей формы — своя подсветка.
 - Ссылка «Перейти к содержимому» (skip-link) есть на всех страницах, появляется по первому нажатию Tab.
 - Модальное окно доступно с клавиатуры: после открытия по Tab фокус попадает на кнопку закрытия и поля окна, а пока окно закрыто, его поля в порядок обхода не входят.
+- Ссылки с одинаковым текстом ведут в одно место: ссылка «Контакты» в подвале, которая вела на главную, переименована в «Адрес и телефон» (найдено Lighthouse).
 - Навигация размечена через `nav`, у каждого меню есть название (`aria-label` или `aria-labelledby`). ARIA используется только там, где без него не обойтись.
 
 Контраст плейсхолдеров и полупрозрачного текста Lighthouse не проверяет, эти проблемы найдены вручную.
 
 ## Lighthouse
 
-Проверены `index.html`, `catalog.html` и `order.html`, категория Accessibility, режим мобильного устройства (Lighthouse 12.8).
+Проверка запускалась в браузере (DevTools → Lighthouse) по опубликованной версии на GitHub Pages: категория Accessibility, режим Mobile (эмуляция Moto G Power), Lighthouse 13.5.0, 11.11.2026.
 
-| Страница | Accessibility |
-|---|---|
-| index.html | 100 |
-| catalog.html | 100 |
-| order.html | 100 |
+| Страница | Accessibility | Пройдено проверок |
+|---|---|---|
+| https://ga4r.github.io/kr3-responsive-shop/index.html | 100 | 27 |
+| https://ga4r.github.io/kr3-responsive-shop/catalog.html | 100 | 24 |
+| https://ga4r.github.io/kr3-responsive-shop/order.html | 100 | 27 |
 
-Скриншот результатов: `lighthouse/accessibility-report.png`, полные HTML-отчёты лежат рядом.
+Ошибок Lighthouse не нашёл. На всех трёх страницах он отметил для ручной проверки пункт «Identical links have the same purpose»: в меню ссылка «Контакты» вела на `contacts.html`, а в подвале ссылка с тем же текстом — на блок контактов на главной. Текст ссылки в подвале заменён на «Адрес и телефон».
+
+В папке `lighthouse/`:
+
+- `accessibility-index.html`, `accessibility-catalog.html`, `accessibility-order.html` — полные отчёты, открываются в браузере;
+- `accessibility-report.png` — скриншот отчёта по `order.html`.
 
 ## Проверенные ширины
 
